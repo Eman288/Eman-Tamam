@@ -1,0 +1,14 @@
+git config: used to identify the user to make sure that the person pushing into the repo 
+to use:
+git config --global user.email "user email"
+git config --global user.name "user name"
+
+git init: used to create a new repo
+to use: 
+git init "the name of the new repo"
+git merge: used to add the new changes we made in the copy and merge it with the origin, if the owner wanted the merge to happen.
+to use:
+git merge "branch"
+git remote:  used to responsible for syncing changes and let's you create connections to other repos
+to use: 
+git remote
