@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label,
+        input,
+        select {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form style="display: flex;flex-direction: column; align-items: center;">
+            <div>
+                <div style="display: flex;flex-direction: row; align-items: flex-start; padding: 15px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="username">Username</label>
+                        <label for="password">Password</label>
+                        <label for="city_of_employment">City Of<br>Employment</label>
+                        <label for="webserver">Web Server</label>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <input id="username" type="text">
+                        <input id="password" type="password">
+                        <input id="city_of_employment" type="text">
+                        <select id="webserver" name="webserver">
+                            <option value="server1">server1</option>
+                            <option value="server2">server2</option>
+                            <option value="server3">server3</option>
+                            <option value="server4">server4</option>
+                            <option value="server5">server5</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="role" style="display: flex; padding: 15px;">
+                    <label for="role">Please specify<br>your role:</label>
+                    <div style="display: grid;">
+                        <input id="admin" name="your_role" type="radio">
+                        <input id="engineer" name="your_role" type="radio">
+                        <input id="manager" name="your_role" type="radio">
+                        <input id="guest" name="your_role" type="radio">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="admin">Admin</label>
+                        <label for="engineer">Engineer</label>
+                        <label for="manager">Manager</label>
+                        <label for="guest">Guest</label>
+                    </div>
+                </div>
+                <div id="sign" style="display: flex; padding: 15px;">
+                    <label for="sign">Single sign-on<br>to the following:</label>
+                    <div style="display: grid;">
+                        <input id="mail" name="sign-on" type="checkbox">
+                        <input id="payroll" name="sign-on" type="checkbox">
+                        <input id="self-service" name="sign-on" type="checkbox">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="mail">Mail</label>
+                        <label for="payroll">Payroll</label>
+                        <label for="self-service">Self-service</label>
+                    </div>
+                </div>
+            </div>
+            <div">
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
